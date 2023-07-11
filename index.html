@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 0.5em;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(220, 15%, 55%);
+        /* margin: 10% auto; */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container > .box {
+        width: 375px;
+        height: 50;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.248);
+      }
+      .container .box .qr img {
+        padding: 15px;
+        border-radius: 30px;
+      }
+      .container .box .text {
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+      span {
+        font-size: 15px;
+        font-family: cursive;
+      }
+      span:last-child {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="qr"><img src="./images/image-qr-code.png" alt="" width="375" /></div>
+        <div class="text">
+          <span><strong>Improve your front-end skills by building projects</strong></span>
+          <span>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</span>
+        </div>
+      </div>
+
+      <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/yTuturam25">Tuturam</a></div>
+    </div>
+  </body>
+</html>
